@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: bolder;
+    line-height: 30px;
+    color: white;
+    background: url("../images/MHW.jpg");
+    background-size: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    clear: both;
+}
+  
+h1,
+h2,
+h3,
+p {
+    margin-bottom: 25px;
+}
+
+#masthead {
+    text-align: center;
+    width: 100%;
+    margin: 24px 0 24px 0;
+}
+
+#main-container {
+    padding-top: 25px;
+    min-height: calc(50vh - 50px);
+    text-align: center;
+}
+
+#wins,
+#losses,
+#score,
+#guesses {
+    text-align: center;
+}
