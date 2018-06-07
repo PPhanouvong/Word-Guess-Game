@@ -10,39 +10,50 @@
     <link rel="stlyesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/images/">
-    <script type="text/javascript" src="assets/javascript/game.js"></script>
 
 </head>
 
 <body>
+    <style>
+        img {
+            opacity: 0.5;
+            filter: alpha(opacity=50);
+            /* For IE8 and earlier */
+        }
+    </style>
+    </head>
     <header id="masthead">
         <div class="container">
             <img src="assets/images/Hangman.jpg" alt="hangman_image">
         </div>
     </header>
 
-    <div id="main-container" class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <h1>Enter any letter to start playing</h1>
+    <div class="container">
+        <div>
+            <div>
+                <h2>Enter any letter to start playing</h2>
             </div>
         </div>
     </div>
-    <div class="col-lg-3">
-        <div id="dashes">Word : &nbsp;&nbsp;
-            <span id="word"></span>
+    <div>
+        <div id="dashes">Word :
+            <span id="wordToGuess">_ _ _ _ _ _ _ _</span>
         </div>
-        <h2>Score
-            <span id="score"></span>
-        </h2>
-        <h3>Wins =
-            <span id="wins"></span>
-        </h3>
-        <h3>Losses =
-            <span id="losses"></span>
-        </h3>
-        <h3>Guesses Remaining =
-            <span id="guesses">20</span>
-        </h3>
-    </div>
+        <div>Wrong Guesses:
+            <span id="wrongGuesses"></span>
+        </div>
+        <div>Wins =
+            <span id="winCounter">0</span>
+        </div>
+        <div>Losses =
+            <span id="lossCounter">0</span>
+        </div>
+        <div>Guesses Remaining =
+            <span id="numGuesses"></span>
+        </div>
+
+        <script type="text/javascript" src="assets/javascript/game.js"></script>
+
 </body>
+
+</html>

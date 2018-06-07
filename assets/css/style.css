@@ -24,6 +24,7 @@ h2,
 h3,
 p {
     margin-bottom: 25px;
+    text-align: center;
 }
 
 #masthead {
@@ -38,9 +39,8 @@ p {
     text-align: center;
 }
 
-#wins,
-#losses,
-#score,
-#guesses {
+#dashes {
     text-align: center;
+    font-size: 48px;
+    font-weight: bolder;
 }
