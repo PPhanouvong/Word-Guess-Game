@@ -13,6 +13,10 @@ var winCount = 0;
 var loseCount = 0;
 var guessesRemain = 10;
 var guessCounter = 0;
+var lose = new Audio("assets/images/Die.wav");
+var win = new Audio("assets/images/Creature.wav");
+
+
 
 function reset() {
     choosenWord = answerArr[Math.floor(Math.random() * answerArr.length)];
@@ -73,12 +77,14 @@ function winLose() {
     if (guessCounter === numDash) {
         winCount++;
         document.getElementById("winCounter").innerHTML = winCount;
+        win.play();
         alert("You Win");
         reset();
     }
     else if (guessesRemain === 0) {
         loseCount++;
         document.getElementById("lossCounter").innerHTML = loseCount;
+        lose.play();
         alert("You Lose");
         reset();
     }
